@@ -9,6 +9,7 @@ import { slugify } from "../../../lib/utils";
 export const prerender = true;
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  if (process.env.PR_PREVIEW) return [];
   const allPosts = await getCollection("posts");
   const publishedPosts = allPosts.filter((p) => p.data.published);
   const allAuthors = await getCollection("authors");

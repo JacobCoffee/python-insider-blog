@@ -6,6 +6,7 @@ interface Props {
 }
 
 import { withBase, stripDescriptionLinks } from "../lib/utils";
+const isPrPreview = Boolean(process.env.PR_PREVIEW);
 const { title, description: rawDescription = "The official blog of the Python core development team.", image } = Astro.props;
 const description = stripDescriptionLinks(rawDescription);
 const baseUrl = import.meta.env.DEV ? Astro.url.origin : Astro.site;
@@ -38,6 +39,7 @@ const ogImage = image ? new URL(image, baseUrl) : new URL(withBase("/og-default.
 </script>
 
 <title>{title}</title>
+{isPrPreview && <meta name="robots" content="noindex" />}
 <meta name="description" content={description} />
 <meta name="generator" content={Astro.generator} />
 
@@ -56,5 +58,11 @@ const ogImage = image ? new URL(image, baseUrl) : new URL(withBase("/og-default.
 <meta name="twitter:image" content={ogImage} />
 
 <!-- Plausible Analytics -->
-<script is:inline defer data-domain="blog.python.org" src="https://analytics.python.org/js/script.hash.outbound-links.js"></script>
-<script is:inline>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+{
+  !isPrPreview && (
+    <>
+      <script is:inline defer data-domain="blog.python.org" src="https://analytics.python.org/js/script.hash.outbound-links.js" />
+      <script is:inline set:html={"window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }"} />
+    </>
+  )
+}

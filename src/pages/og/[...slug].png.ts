@@ -8,6 +8,7 @@ import { getFonts } from "../../lib/og-fonts";
 export const prerender = true;
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  if (process.env.PR_PREVIEW) return [];
   const posts = await getCollection("posts");
   return posts
     .filter((p) => p.data.published)

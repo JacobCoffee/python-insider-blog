@@ -32,6 +32,11 @@ dev: ## Start development server
 preview: ## Build and preview production locally
 	bun run preview
 
+.PHONY: pr-preview
+pr-preview: ## Build and serve the site as a PR preview locally
+	PR_PREVIEW=local bun run build
+	bun run preview
+
 ## Build
 
 .PHONY: build

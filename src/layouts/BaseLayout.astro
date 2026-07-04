@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import PreviewBanner from "../components/PreviewBanner.astro";
 import Footer from "../components/Footer.astro";
 import "../assets/styles/global.css";
 
@@ -20,6 +21,7 @@ const { title, description, image, fullWidth = false } = Astro.props;
     <BaseHead title={title} description={description} image={image} />
   </head>
   <body class="flex min-h-screen flex-col bg-[#fafaf9] text-[#1a1a2e] dark:bg-[#0f1117] dark:text-[#e4e4e7]">
+    <PreviewBanner />
     <Header />
     <main class:list={[
       "flex-1",
