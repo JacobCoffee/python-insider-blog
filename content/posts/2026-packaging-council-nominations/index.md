@@ -1,5 +1,5 @@
 ---
-title: Get Ready: 2026 Python Packaging Council Nominations Opening Soon\!
+title: "Get Ready: 2026 Python Packaging Council Nominations Opening Soon!"
 publishDate: "2026-07-23"
 author: Pradyun Gedam
 description: "The inaugural Python Packaging Council Election nomination period opens on Tuesday, July 28th, 2:00 pm UTC and closes on Tuesday, August 11th, 2:00 pm UTC."
