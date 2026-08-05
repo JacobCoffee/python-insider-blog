@@ -37,7 +37,7 @@ https://www.python.org/downloads/release/python-31315/
 
 ## And now for something completely different
 
-On 2nd August 2010, Shigeru Kondo calculated π to 5 trillion digits using
+On 2nd August 2010, Shigeru Kondo calculated *π* to 5 trillion digits using
 y-cruncher 0.5.4. It took 90 days using 12 cores, 96 GiB RAM and 39 TB
 storage on Windows Server 2008 R2.
 
