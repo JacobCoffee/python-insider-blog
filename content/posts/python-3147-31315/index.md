@@ -37,8 +37,14 @@ https://www.python.org/downloads/release/python-31315/
 
 ## And now for something completely different
 
-Hugo is at the dentist, so it's left to me to remind you: pie is bad for
-your teeth!
+On 2nd August 2010, Shigeru Kondo calculated π to 5 trillion digits using
+y-cruncher 0.5.4. It took 90 days using 12 cores, 96 GiB RAM and 39 TB
+storage on Windows Server 2008 R2.
+
+The current record is 314 trillion digits from 18 November 2025, calculated
+by Kevin O'Brien, Divyansh Jain, Brian Beeler using y-cruncher 0.8.6. This
+took 110 days using 384 cores, 1.5 TiB RAM and 2.4 PB storage on Ubuntu
+24.04.
 
 
 ## Enjoy the new releases
