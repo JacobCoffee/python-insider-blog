@@ -6,7 +6,7 @@ description: "Announcing the 17 nominees for the inaugural Python Packaging Coun
 published: true
 ---
 
-What an exciting list! Please take a look at who is running for the inaugural Python Packaging Council (PPC) [on the Nominees page](https://www.python.org/nominations/2026-python-packaging-council/nominees/). This election has 17 nominees for 5 open seats on the council.
+What an exciting list! Please take a look at who is running for the inaugural Python Packaging Council (PPC) [on the Nominees page](https://www.python.org/nominations/elections/2026-python-packaging-council/nominees/). This election has 17 nominees for 5 open seats on the council.
 
 ## Election Overview
 
