@@ -85,7 +85,7 @@ interface Match {
 function extractText(children: PhrasingContent[]): string {
   return children
     .map((c) => {
-      if (c.type === "text") return c.value;
+      if (c.type === "text" || c.type === "inlineCode") return c.value;
       if ("children" in c) return extractText(c.children as PhrasingContent[]);
       return "";
     })
