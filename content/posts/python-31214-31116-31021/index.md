@@ -44,25 +44,29 @@ New security releases for 3.10, 3.11 and 3.12 are now available. (As these Pytho
 * [gh-109638](https://github.com/python/cpython/issues/109638): Fix exponential time in [`csv.Sniffer.sniff()`](https://docs.python.org/release/3.12.14/library/csv.html#csv.Sniffer.sniff) for a sample which contains many quote characters. A doubled quote character is now also detected in a field which contains the delimiter or a line break.
 * [gh-98820](https://github.com/python/cpython/issues/98820): Fix quadratic time in [`csv.Sniffer.sniff()`](https://docs.python.org/release/3.12.14/library/csv.html#csv.Sniffer.sniff) for a sample which contains quoted fields, in particular for a single column of quoted fields.
 * [gh-149018](https://github.com/python/cpython/issues/149018): Improved protection against XML hash-flooding attacks in [`xml.parsers.expat`](https://docs.python.org/release/3.12.14/library/pyexpat.html#module-xml.parsers.expat) and [`xml.etree.ElementTree`](https://docs.python.org/release/3.12.14/library/xml.etree.elementtree.html#module-xml.etree.ElementTree) when Python is compiled with libExpat 2.8.0 or later.
-* [gh-146083](https://github.com/python/cpython/issues/146083), [gh-149017](https://github.com/python/cpython/issues/149017), [gh-149698](https://github.com/python/cpython/issues/149698), [gh-152216](https://github.com/python/cpython/issues/152216), [gh-155558](https://github.com/python/cpython/issues/155558): Update bundled [libexpat](https://libexpat.github.io/) to version 2.8.3.
+* [gh-146083](https://github.com/python/cpython/issues/146083), [gh-149017](https://github.com/python/cpython/issues/149017), [gh-149698](https://github.com/python/cpython/issues/149698), [gh-152216](https://github.com/python/cpython/issues/152216): Update bundled [libexpat](https://libexpat.github.io/) to version 2.8.2.
 
 # Python 3.12.14
 
-Additional fixes in this release (they only apply to 3.12):
+Additional fixes in this release:
 * [gh-139808](https://github.com/python/cpython/issues/139808): Add branch protections for AArch64 (BTI/PAC) in assembly code used by [`-X perf_jit`](https://docs.python.org/release/3.12.14/using/cmdline.html#cmdoption-X) (Linux perf profiler integration).
+* [gh-155558](https://github.com/python/cpython/issues/155558): Update bundled [libexpat](https://libexpat.github.io/) to version 2.8.3.
+* [gh-149018](https://github.com/python/cpython/issues/149018): Improved protection against XML hash-flooding attacks in [`xml.parsers.expat`](https://docs.python.org/release/3.12.14/library/pyexpat.html#module-xml.parsers.expat) and [`xml.etree.ElementTree`](https://docs.python.org/release/3.12.14/library/xml.etree.elementtree.html#module-xml.etree.ElementTree) when Python is compiled with libExpat 2.8.0 or later.
 
 https://www.python.org/downloads/release/python-31214/
 
 # Python 3.11.16
 
-Additional fixes in this release (they were already included in a previous 3.12 release):
+Additional fixes in this release:
 * [gh-100372](https://github.com/python/cpython/issues/100372): [`ssl.SSLContext.load_verify_locations`](https://docs.python.org/release/3.11.16/library/ssl.html#ssl.SSLContext.load_verify_locations) no longer incorrectly accepts some cases of trailing data when parsing DER.
+* [gh-155558](https://github.com/python/cpython/issues/155558): Update bundled [libexpat](https://libexpat.github.io/) to version 2.8.3.
+* [gh-149018](https://github.com/python/cpython/issues/149018): Improved protection against XML hash-flooding attacks in [`xml.parsers.expat`](https://docs.python.org/release/3.12.14/library/pyexpat.html#module-xml.parsers.expat) and [`xml.etree.ElementTree`](https://docs.python.org/release/3.12.14/library/xml.etree.elementtree.html#module-xml.etree.ElementTree) when Python is compiled with libExpat 2.8.0 or later.
 
 https://www.python.org/downloads/release/python-31116/
 
 # Python 3.10.21
 
-Additional fixes in this release (they were already included in a previous 3.12 release):
+Additional fixes in this release:
 * [gh-100372](https://github.com/python/cpython/issues/100372): [`ssl.SSLContext.load_verify_locations`](https://docs.python.org/release/3.10.21/library/ssl.html#ssl.SSLContext.load_verify_locations) no longer incorrectly accepts some cases of trailing data when parsing DER.
 
 https://www.python.org/downloads/release/python-31021/
