@@ -1,6 +1,6 @@
 ---
 title: The Python documentation is now available in Russian!
-publishDate: 2026-08-20
+publishDate: 2026-08-22
 author: Stan Ulbrych
 tags:
   - docs
