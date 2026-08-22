@@ -6,7 +6,7 @@ tags:
   - docs
 published: true
 ---
-We’re excited to announce that the [Python documentation is now available in Russian (русский)](https://docs.python.org/ru/3/)! 🎉
+We’re excited to announce that the [Python documentation is now available in Russian (русский)](https://docs.python.org/ru/3.14/)! 🎉
 
 A huge thank you to everyone who contributed their time and expertise to the
 translation effort. Community contributions like these help make Python more
