@@ -1,6 +1,6 @@
 ---
 title: RISC-V is now officially supported by CPython!
-publishDate: 2026-08-23
+publishDate: 2026-08-24
 author: Stan Ulbrych
 description: >
   I’m happy to announce that RISC-V platforms are now officially supported by
@@ -41,7 +41,7 @@ support. RISE has kindly provided several RISC-V machines for CPython,
 giving us buildbots for testing as well as debugging architecture-specific issues.
 
 I’d especially like to thank [Ludovic Henry](https://github.com/luhenry) from the RISE Project,
-[Furkan Onder](https://github.com/furkanonder), and [Emma Smith](https://github.com/emmatyping), along with the many others who have
+[Furkan Onder](https://github.com/furkanonder), and [Emma Smith](https://emmatyping.dev/), along with the many others who have
 contributed. Additionally, I'm personally grateful for the [Sovereign Tech Agency](https://www.sovereign.tech/),
 which through their amazing fellowship supported my work on this.
 
